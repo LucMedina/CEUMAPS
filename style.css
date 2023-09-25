@@ -1,0 +1,76 @@
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#logo {
+    height: 50px;
+    margin: 10px;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 3px black;
+    margin-top: -12px;
+}
+label {
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #003b71;
+    overflow-x: hidden;
+}
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img {
+    max-width: 100%;
+    width: auto;
+    height: 650px;
+    margin: 10px;
+    pointer-events: none;
+}
+p {
+    color: #e4e4e4;
+}
+#bloco {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 25px;
+}
+#numero {
+    margin-bottom: 8px;
+    height: 25px;
+}
+#busca {
+    height: 40px;
+    width: 90px;
+}
+#galeria {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+    img {
+        height: auto;
+        width: 300px;
+    }
+    #logo {
+        height: 50px;
+        margin: 10px;
+        width: auto;
+    }
+}
+
+@media (max-width: 655px) {
+    img {
+        height: auto;
+        width: 240px;
+    }
+}

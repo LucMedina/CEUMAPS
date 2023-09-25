@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEUMAPS: Encontre sua sala!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+    <div id="header">
+        <!-- Logo -->
+        <a href="https://www.ceunsp.edu.br/"><img id="logo" src="logo.png"></a>
+        <h1>CEUMAPS</h1>
+
+        <!-- Campus -->
+        <label>Campus 2</label>
+
+        <br>
+
+        <!-- Seleção do bloco -->
+        <label for="bloco">Selecione o bloco:</label>
+        <select id="bloco">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+        </select>
+
+        <br>
+
+        <!-- Seleção de número da sala -->
+        <label for="numero">Digite o número da sala:</label>
+        <input type="number" id="numero" min="101" max="105" onKeyUp="if(this.value>105){this.value='105';}else if(this.value<101){this.value='101';}">
+
+        <br>
+
+        <!-- Botão para buscar imagens -->
+        <button id="busca">Buscar</button>
+
+    </div>
+
+    <!-- Galeria de imagens -->
+    <div id="galeria"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
